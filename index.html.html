@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,16 +46,29 @@
     <!-- Event Registration Feature -->
     <section id="register">
         <h2>Register for an Event</h2>
+
         <div class="registration-container">
             <form id="registrationForm">
+
                 <div class="form-group">
                     <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName" placeholder="Enter your full name" required>
+                    <input type="text" id="fullName"
+                        placeholder="Enter your full name" required>
                 </div>
+
+                <!-- New Email Field -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email"
+                        placeholder="Enter your email address" required>
+                </div>
+
                 <div class="form-group">
                     <label for="rollNumber">Roll Number / Student ID</label>
-                    <input type="text" id="rollNumber" placeholder="e.g. CS2026-042" required>
+                    <input type="text" id="rollNumber"
+                        placeholder="e.g. CS2026-042" required>
                 </div>
+
                 <div class="form-group">
                     <label for="department">Department</label>
                     <select id="department" required>
@@ -65,6 +79,7 @@
                         <option value="Mechanical Engineering">Mechanical Engineering</option>
                     </select>
                 </div>
+
                 <div class="form-group">
                     <label for="eventChoice">Select Event</label>
                     <select id="eventChoice" required>
@@ -73,10 +88,16 @@
                         <option value="Coding Hackathon">Coding Hackathon (28 Dec 2026)</option>
                     </select>
                 </div>
-                <button type="submit" class="submit-btn">Submit Registration</button>
+
+                <button type="submit" class="submit-btn">
+                    Submit Registration
+                </button>
+
             </form>
-            <div id="confirmationMessage" class="alert-box" style="display:none;">
-                🎉 Registration submitted successfully! Check your college email for pass.
+
+            <div id="confirmationMessage" class="alert-box"
+                style="display:none;">
+                Registration submitted successfully!
             </div>
         </div>
     </section>
@@ -84,32 +105,40 @@
     <!-- Event Gallery Feature -->
     <section id="gallery">
         <h2>Event Gallery & Memories</h2>
-        <p class="gallery-subtitle">Relive the finest moments from our past college fests</p>
+        <p class="gallery-subtitle">
+            Relive the finest moments from our past college fests
+        </p>
+
         <div class="gallery-grid">
+
             <div class="gallery-card">
                 <div class="gallery-thumb">🏆</div>
                 <h3>Hackathon 2025 Grand Finale</h3>
                 <p>36 hours of non-stop code, innovation and teamwork.</p>
                 <span class="badge">Tech</span>
             </div>
+
             <div class="gallery-card">
                 <div class="gallery-thumb">🎸</div>
                 <h3>Battle of the Bands</h3>
                 <p>Mesmerizing musical night with top college rock bands.</p>
                 <span class="badge">Cultural</span>
             </div>
+
             <div class="gallery-card">
                 <div class="gallery-thumb">🤖</div>
                 <h3>RoboWars Championship</h3>
                 <p>Combat robots clashing for the ultimate college trophy.</p>
                 <span class="badge">Robotics</span>
             </div>
+
             <div class="gallery-card">
                 <div class="gallery-thumb">⚽</div>
                 <h3>Inter-College Sports Meet</h3>
                 <p>Celebrating athletic spirit, resilience and sportsmanship.</p>
                 <span class="badge">Sports</span>
             </div>
+
         </div>
     </section>
 
@@ -123,5 +152,6 @@
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
